@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:layout_margin="10dp">
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Product"
+		android:layout_gravity="center_horizontal"
+		android:textColor="@android:color/holo_green_dark"/>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Name : "/>
+			<TextView
+				android:id="@+id/tvName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Product Name"/>
+		</LinearLayout>
+		<RatingBar
+				android:id="@+id/rtProduct"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:rating="0"
+				android:numStars="5"
+				android:stepSize="0.5"/>
+		<Button
+				android:id="@+id/btnSend"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Send"
+				android:textAllCaps="false"
+				android:layout_marginTop="10dp"/>
+	</LinearLayout>
+</LinearLayout>
